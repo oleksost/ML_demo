@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>ML</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <link rel="stylesheet" href="../static/css/styles.css?v=1.0">
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="http://mpld3.github.io/js/mpld3.v0.2.js"></script>
+    <script src="/static/js/Chart.min.js"></script>
+
+  <!--<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+
+</head>
+
+
+
+
+<body>
+<img id="logo" src="static/img/logo-dark.png">
+<div id='container_iframe'></div>
+
+  <!--<img id='screenshot' src='static/img/graph.png' alt='Screenshot missing'>-->
+
+  <!--
+    <iframe id='ain' src='http://veui5infra.dhcp.wdf.sap.corp:8080/sapui5-sdk-dist/explored.html#/sample/sap.uxap.sample.AlternativeProfileObjectPageHeader/preview'></iframe>
+  -->
+
+
+
+<div id='container_main'>
+
+    <div id='person'>
+           <div id='person_headline' class='headline'>
+            Person
+           </div>
+        <select class="select">
+            <option value="Person1">Person 1</option>
+            <option value="Person2">Person 2</option>
+            <option value="Person3">Person 3</option>
+        </select>
+        <button id="train_initial" type="button">Train initial model</button>
+
+    </div>
+
+
+    <div id='data_input_control'>
+        <div class='headline'>
+            Data input
+        </div>
+        <!--New dataset -->
+        <div class='newdataset'>
+           <div class='label'>Longitude:&nbsp; <span id='long'>
+             ...
+            </span></div>
+
+            <div class='label'>Latitude:&nbsp; <span id='lat'>
+             ...
+            </span></div>
+
+            <div class='label'>Distance Home:&nbsp;<span id='dist'>
+             ...
+            </span></div>
+
+            <div class='label'>Weekday:&nbsp;<span id='weekday'>
+             ...
+            </span></div>
+
+            <div class='label'>Hour:&nbsp;<span id='hour'>
+             ...
+            </span></div>
+
+            <div class='label'>Minutes:&nbsp;<span id='min'>
+             ...
+            </span></div>
+
+            <div class='label'>Tempreture:&nbsp;<span id='temp'>
+             ...
+            </span></div>
+
+            <div class='label'>Downfall:&nbsp;<span id='downfall'>
+             ...
+            </span></div>
+            <div class='label'>Time:&nbsp;<span id='time'>
+             ...
+            </span></div>
+
+
+            <br>
+            <button id="new_dat_point" type="button">Create new datapoint</button>
+            <button type="add_point_to_model">Add datapoint to the model</button>
+            <button type="add_next_10_points_to_model">Add 10 next points</button>
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+  <script src="../static/js/jquery1-12-1.js"></script>
+  <script src="../static/js/script.js"></script>
+</html>
